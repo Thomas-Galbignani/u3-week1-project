@@ -30,7 +30,7 @@ class MyGallery extends Component {
             }
         })
             .then((data) => {
-                this.setState({ movies: data.Search, isLoading: false });
+                this.setState({ movies: data.Search});
                 console.log(data.Search)
             })
             .catch((error) => {
